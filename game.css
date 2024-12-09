@@ -1,0 +1,107 @@
+/* General styles */
+body {
+    background-color: black; /* Set background to black */
+    color: white; /* Text color for visibility */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  header {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  h1 {
+    color: #ffcc00; /* Title color for better contrast */
+    margin-bottom: 10px;
+  }
+  
+  .info, .instructions {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  /* Game Board */
+  #game-board {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Tubes */
+  .tube {
+    width: 60px;
+    height: 150px; /* Reduced height for smaller tubes */
+    background-color: #333;
+    border: 2px solid #555;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .tube:hover {
+    border-color: #ffcc00;
+  }
+  
+  /* Liquids */
+  .liquid {
+    width: 90%;
+    height: 20px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    animation: pop-in-out 0.4s ease-in-out;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  button:hover {
+    background-color: #e6b800;
+  }
+  
+  footer {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  /* Animations */
+  @keyframes pop-in-out {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+  
+  
